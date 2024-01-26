@@ -4,5 +4,10 @@
   "main": "index.js",
   "repository": "git@github.com:atsss/image_generator.git",
   "author": "atsss <atsushi0623itoh@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@resvg/resvg-js": "2.2.0",
+    "satori": "0.0.44",
+    "satori-html": "0.3.2"
+  }
 }
