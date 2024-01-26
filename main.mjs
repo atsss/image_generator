@@ -35,4 +35,4 @@ const resvg = new Resvg(svg, {
 const pngData = resvg.render();
 const pngBuffer = pngData.asPng();
 
-await writeFile("./output.png", pngBuffer);
+await writeFile(`./tmp/${Date.now()}.png`, pngBuffer);
