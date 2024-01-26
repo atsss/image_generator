@@ -14,3 +14,8 @@
 
 ## Flow
 HTML -> Satori -> Resvg -> PNG
+
+## How to use
+```
+node main.mjs
+```
