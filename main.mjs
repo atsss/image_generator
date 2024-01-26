@@ -21,7 +21,7 @@ const svg = await satori(template, {
   fonts: [
     {
       name: "VictorMono",
-      data: await readFile("./VictorMono-Bold.ttf"),
+      data: await readFile("./assets/VictorMono-Bold.ttf"),
       weight: 700,
       style: "normal",
     },
