@@ -30,7 +30,7 @@ const options = {
   fonts: [
     {
       name: "VictorMono",
-      data: await readFile("./assets/VictorMono-Bold.ttf"),
+      data: await readFile("./satori/assets/VictorMono-Bold.ttf"),
       weight: 700,
       style: "normal",
     },
@@ -47,4 +47,4 @@ const resvg = new Resvg(svg, {
 const pngData = resvg.render();
 const pngBuffer = pngData.asPng();
 
-await writeFile(`./tmp/${Date.now()}.png`, pngBuffer);
+await writeFile(`./satori/tmp/${Date.now()}.png`, pngBuffer);
