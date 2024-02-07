@@ -3,6 +3,7 @@ import puppeteer from 'puppeteer';
 (async () => {
   const browser = await puppeteer.launch({ headless: 'new' });
   const page = await browser.newPage();
+  await page.setViewport({ width: 1680, height: 1680 });
 
   const targetElementSelector = '#puppeteer_screenshot_id'
 
