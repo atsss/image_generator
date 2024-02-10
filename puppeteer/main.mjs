@@ -1,9 +1,12 @@
 import puppeteer from 'puppeteer';
 
+const width = 1680;
+const height = 1680;
+
 (async () => {
   const browser = await puppeteer.launch({ headless: 'new' });
   const page = await browser.newPage();
-  await page.setViewport({ width: 1680, height: 1680 });
+  await page.setViewport({ width, height });
 
   const targetElementSelector = '#puppeteer_screenshot_id'
 
